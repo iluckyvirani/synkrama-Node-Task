@@ -33,7 +33,7 @@ Follow these steps to get the project up and running on your local machine.
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/your-username/your-repo-name.git](https://github.com/iluckyvirani/synkrama-Node-Task.git)
    ```
 
 2. **Navigate to the project directory**:
@@ -64,13 +64,6 @@ Once the dependencies are installed, you can start the application:
 
    This will run the Node.js server, and you can access the API at `http://localhost:3000` (or the port you've specified in your app).
 
-2. **Alternatively**, if you want to run the project in a development environment with automatic reloading on file changes, use:
-
-   ```bash
-   npm run dev
-   ```
-
----
 
 ## Environment Variables
 
@@ -81,6 +74,7 @@ The project uses environment variables to manage sensitive information such as d
    ```
    MONGOOSE_URI=your-mongo-db-uri
    PORT=3000
+   JWT_SECRET=lucky
    ```
 
    Replace `your-mongo-db-uri` with the URI to your MongoDB instance (e.g., from MongoDB Atlas or your local instance).
