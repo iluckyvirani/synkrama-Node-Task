@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(morgan("dev"));
 
 app.use("/api/user", userRoutes);
-app.use("/api/book", bookRoutes);
+app.use("/api/books", bookRoutes);
 
 app.get("/", (req, res) => {
     res.status(200).json("GET request successful");

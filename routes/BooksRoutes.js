@@ -8,10 +8,10 @@ const router = express.Router();
 
 
 router.post('/add', checkUserAuth, validate(bookSchema), AddBook);
-router.put('/updateBookById/:id', checkUserAuth, validate(bookSchema), UpdateBookById);
-router.get('/getBookById/:id', checkUserAuth, getBookyId);
-router.get('/get/books', checkUserAuth, getAllBooks);
-router.delete('/deleteBookById/:id', checkUserAuth, deleteBook);
+router.put('/update/:id', checkUserAuth, validate(bookSchema), UpdateBookById);
+router.get('/:id', checkUserAuth, getBookyId);
+router.get('/', checkUserAuth, getAllBooks);
+router.delete('/delete/:id', checkUserAuth, deleteBook);
 
 
 
