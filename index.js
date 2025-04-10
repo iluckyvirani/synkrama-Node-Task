@@ -12,7 +12,7 @@ import connectDB from "./config/db.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 
 connectDB();
 
@@ -34,6 +34,8 @@ app.use((err, req, res, next) => {
     res.status(500).send({ message: "Something went wrong!" });
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+module.exports = app; 
+
+// app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+// });
